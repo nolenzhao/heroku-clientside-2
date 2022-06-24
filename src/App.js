@@ -12,6 +12,7 @@ function App() {
     .then(raw => raw.json())
     .then(result =>{
       setData(result);
+      console.log(data.text_array);
       console.log(data.text_array[1])
     })
  
@@ -24,7 +25,7 @@ function App() {
       <div>
       {data.alt_text}
       {data.text_array[1]}
-    </div>
+      </div>
 
     
     </div>
