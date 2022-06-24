@@ -8,7 +8,7 @@ function App() {
 
 
   useEffect( () =>{
-    fetch("https://heroku-api-test-2.herokuapp.com/gallery/1")
+    fetch("https://heroku-api-test-2.herokuapp.com/gallery/2")
     .then(raw => raw.json())
     .then(result =>{
       setData(result);
@@ -21,9 +21,10 @@ function App() {
       Up n' running
       <div>
       {data.alt_text}
+      {data.text_array[1]}
     </div>
 
-    <img src = {data.img_url}/>
+    
     </div>
   );
 }
